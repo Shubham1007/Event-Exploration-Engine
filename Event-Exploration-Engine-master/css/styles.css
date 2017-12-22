@@ -1,0 +1,34 @@
+ @font-face {
+    font-family: "Roboto-Light";
+    src: url(../fonts/roboto.light.ttf) format("truetype");
+}
+ @font-face {
+    font-family: "Roboto-Regular";
+    src: url(../fonts/roboto.regular.ttf) format("truetype");
+}
+
+.searchWrapper{
+	margin-top: 13%;
+}
+
+.searchWrapper input{
+	height: 50px;
+	border-radius: 0px !important;
+	font-size: 1.3vw;
+	font-family: "Roboto-Regular" !important;
+}
+
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  padding-top: 5px;
+  margin-top: 0;
+  pointer-events: none;
+}
+
+.glyphicon-search{
+	position: absolute;
+	right: 20px;
+	height: 40px;
+	margin-top: 4px;
+}

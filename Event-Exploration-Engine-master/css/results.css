@@ -1,0 +1,70 @@
+ @font-face {
+    font-family: "Roboto-Light";
+    src: url(../fonts/roboto.light.ttf) format("truetype");
+}
+ @font-face {
+    font-family: "Roboto-Regular";
+    src: url(../fonts/roboto.regular.ttf) format("truetype");
+}
+
+.searchWrapper{
+	margin-top: 1%;}
+
+.searchWrapper input{
+	height: 40px;
+	border-radius: 0px !important;
+	font-size: 1.1vw;
+	font-family: "Roboto-Regular" !important;
+}
+
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  padding-top: 5px;
+  margin-top: 0;
+  pointer-events: none;
+}
+
+.glyphicon-search{
+	position: absolute;
+	right: 20px;
+	height: 30px;
+	margin-top: 4px;
+}
+
+.modi{
+	border: none;
+	background: none;
+}
+
+h1, p{
+	font-family: "Roboto-Regular";
+}
+
+#info p{
+	margin-left: 30px;
+}
+
+.kp{
+	font-size: 2vw;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.em{
+	float: left;
+	width: 50%;
+	background-color: blue;
+}
+
+.ac{
+	float: right;
+	width: 50%;
+	background-color: green;
+}
+
+.keyp{
+	background-color: #888 !important;
+	margin-left: 10px !important;
+}

@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>ECube</title>
+	<!-- Start Alexa Certify Javascript -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!-- Bootstrap CSS -->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+	
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/results.css">
+	<link rel="stylesheet" href="css/home.css">
+	
+	<!-- For older version browsers -->
+	<script src="includes/js/modernizr-2.6.2.min.js"></script>
+</head>
+<body  ng-app="eCubeApp" ng-controller="keyPhraseController">
+<div class="container" id="header">
+	<div class="col-sm-5 searchWrapper">
+		<div class="searchBox inner-addon left-addon">
+			<a href="#"><img src="images/search.png" class="glyphicon-search"></a>
+			<input type="search"  class="form-control" id="search" placeholder="Enter a News item." />
+		</div>		
+	</div><!-- Ending Search Box -->
+</div>
+<div class="container" id="main">
+	<div class="bs-example bs-example-tabs" style="margin-top: 20px;">
+        <ul id="myTab" class="nav nav-tabs">
+        	<li class="active"><a href="#keyPhrase" data-toggle="tab">f{{accessData.firstName}}</li>
+          	<li class=""><a href="#names" data-toggle="tab">Top names</a></li>
+	          <li class=""><a href="#organisations" data-toggle="tab">Organisations</a></li>
+	          <li class=""><a href="#locations" data-toggle="tab">Locations</a></li>
+	          <li class=""><a href="#concept" data-toggle="tab">Concept Graph</a></li>
+        </ul>
+    </div>
+
+    <div id="myTabContent" class="tab-content">
+    	<div class="tab-pane fade active in" id="keyPhrase">
+    		<div class="third">
+	    		<div id="myCarousel_2" class="carousel slide" data-interval="40000000" data-ride="carousel">
+	    			
+	       		<!-- Carousel items -->
+	        		<div class="carousel-inner">
+	            		<div class="active item" id="tem_1">
+	                		<div id = "third">
+								<ul class="products">
+									<div class="product"><li class="keyp">
+										<div class="kp">{{ keyPhraseList[0].key }}</div>
+										<div class="em">Emergent</div>
+										<div class="ac">Active</div>
+									</li></div><!--end div.product-->
+									<div class="product"><li class="keyp">
+										<div class="kp">Keyphrase</div>
+										<div class="em">Emergent</div>
+										<div class="ac">Active</div>
+									</li></div><!--end div.product-->
+									
+									<div class="product"><li class="keyp">
+										<div class="kp">Keyphrase</div>
+										<div class="em">Emergent</div>
+										<div class="ac">Active</div>
+									</li></div><!--end div.product-->
+									<div class="product"><li class="keyp">
+										<div class="kp">Keyphrase</div>
+										<div class="em">Emergent</div>
+										<div class="ac">Active</div>
+									</li></div><!--end div.product-->
+									</ul>
+							</div>
+
+	            		</div>
+	            		<div class="item" id="tem_2">
+	                		<div id = "third">
+								<ul class="products">
+									<div class="product"><li>
+										<a href="#"><img src="../static/images/home-003.png" width="160" height="250"></a>
+										<span class="text-content"><span><a href="#"><div class="host">Sachin Aggarwal<br/>Roorkee, India</div><div class="host_pics"><img src="../static/images/thumbnail.png" width="45px" height="45px" /></div></a></span></span>
+										<span class="add_to_wishcart"><a href="#">Add to Wishcart</a></span>
+										<p>Formal Shirt<br/>Rs. 999</p>
+									</li></div><!--end div.product-->
+									<div class="product"><li>
+										<a href="#"><img src="../static/images/home-05.png" width="160" height="250"></a>
+											<span class="text-content"><span><a href="#"><div class="host">Sachin Aggarwal<br/>Roorkee, India</div><div class="host_pics"><img src="../static/images/thumbnail.png"  width="45px" height="45px"/></div></a></span></span>
+											<span class="add_to_wishcart"><a href="#">Add to Wishcart</a></span>
+											<p>Levi's Tee<br/>Rs. 3999</p>
+									</li></div><!--end div.product-->
+									
+									<div class="product"><li>
+										<a href="#"><img src="../static/images/home-07.png" width="160" height="250"></a>
+											<span class="text-content"><span><a href="#"><div class="host">Sachin Aggarwal<br/>Roorkee, India</div><div class="host_pics"><img src="../static/images/thumbnail.png" width="45px" height="45px" /></div></a></span></span>
+											<span class="add_to_wishcart"><a href="#">Add to Wishcart</a></span>
+											<p>Gucci Tee<br/>Rs. 4999</p>
+									</li></div><!--end div.product-->
+									<div class="product"><li>
+										<a href="#"><img src="../static/images/home-05.png" width="160" height="250"></a>
+											<span class="text-content"><span><a href="#"><div class="host">Sachin Aggarwal<br/>Roorkee, India</div><div class="host_pics"><img src="../static/images/thumbnail.png" width="45px" height="45px" /></div></a></span></span>
+											<span class="add_to_wishcart"><a href="#">Add to Wishcart</a></span>
+											<p>Polo Tee<br/>Rs. 2999</p>
+									</li></div><!--end div.product-->
+								</ul>
+							</div>
+	            		</div>
+	            		<div class="item" id="tem_3">
+	                		<div id = "third">
+								<ul class="products">
+									<div class="product"><li>
+										<a href="#"><img src="../static/images/home-003.png" width="160" height="250"></a>
+										<span class="text-content"><span><a href="#"><div class="host">Sachin Aggarwal<br/>Roorkee, India</div><div class="host_pics"><img src="../static/images/thumbnail.png" width="45px" height="45px" /></div></a></span></span>
+										<span class="add_to_wishcart"><a href="#">Add to Wishcart</a></span>
+										<p>Formal Shirt<br/>Rs. 999</p>
+									</li></div><!--end div.product-->
+									<div class="product"><li>
+										<a href="#"><img src="../static/images/home-05.png" width="160" height="250"></a>
+											<span class="text-content"><span><a href="#"><div class="host">Sachin Aggarwal<br/>Roorkee, India</div><div class="host_pics"><img src="../static/images/thumbnail.png"  width="45px" height="45px"/></div></a></span></span>
+											<span class="add_to_wishcart"><a href="#">Add to Wishcart</a></span>
+											<p>Levi's Tee<br/>Rs. 3999</p>
+									</li></div><!--end div.product-->
+									
+									<div class="product"><li>
+										<a href="#"><img src="../static/images/home-07.png" width="160" height="250"></a>
+											<span class="text-content"><span><a href="#"><div class="host">Sachin Aggarwal<br/>Roorkee, India</div><div class="host_pics"><img src="../static/images/thumbnail.png" width="45px" height="45px" /></div></a></span></span>
+											<span class="add_to_wishcart"><a href="#">Add to Wishcart</a></span>
+											<p>Gucci Tee<br/>Rs. 4999</p>
+									</li></div><!--end div.product-->
+									<div class="product"><li>
+										<a href="#"><img src="../static/images/home-05.png" width="160" height="250"></a>
+											<span class="text-content"><span><a href="#"><div class="host">Sachin Aggarwal<br/>Roorkee, India</div><div class="host_pics"><img src="../static/images/thumbnail.png" width="45px" height="45px" /></div></a></span></span>
+											<span class="add_to_wishcart"><a href="#">Add to Wishcart</a></span>
+											<p>Polo Tee<br/>Rs. 2999</p>
+									</li></div><!--end div.product-->
+								</ul>
+							</div>
+	            		</div>
+	        		</div>
+	        		<!-- Carousel nav -->
+	        		<a class="carousel-control left" href="#myCarousel_2" data-slide="prev">
+	            		<span class="glyphicon glyphicon-chevron-left"></span>
+	        		</a>
+	        		<a class="carousel-control right" href="#myCarousel_2" data-slide="next">
+	            		<span class="glyphicon glyphicon-chevron-right"></span>
+	        		</a>
+	    		</div>
+			</div>
+    	</div>
+
+
+        <div class="tab-pane fade" id="names">
+            <div class="row center col-sm-8" id="features" style="margin-top: 40px;">
+
+				<div class="col-sm-4" style="text-align: center;">
+					<div class="panel" style="border-radius: 30px;">
+						<img src="images/modi.png" alt="HTML5" height="180px">
+							<div class="text-center panelDiv">
+								<div class="row" onclick="showDiv()">
+									<button class="modi"><h5><b>Narendra Modi</b></h5></button>
+								</div>
+								<div>
+									<p>Prime minister of India since 26/05/2014</p>
+								</div>
+							</div>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+
+				<div class="col-sm-4" style="text-align: center;">
+					<div class="panel" style="border-radius: 30px;">
+						<img src="images/modi.png" alt="HTML5" height="180px">
+							<div class="text-center panelDiv">
+								<div class="row" onclick="showDiv()">
+									<button class="modi"><h5><b>Narendra Modi</b></h5></button>
+								</div>
+								<div>
+									<p>Prime minister of India since 26/05/2014</p>
+								</div>
+							</div>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+
+				<div class="col-sm-4" style="text-align: center;">
+					<div class="panel" style="border-radius: 30px;">
+						<img src="images/modi.png" alt="HTML5" height="180px">
+							<div class="text-center panelDiv">
+								<div class="row" onclick="showDiv()">
+									<button class="modi"><h5><b>Narendra Modi</b></h5></button>
+								</div>
+								<div>
+									<p>Prime minister of India since 26/05/2014</p>
+								</div>
+							</div>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+
+				<div class="col-sm-4" style="text-align: center;">
+					<div class="panel" style="border-radius: 30px;">
+						<img src="images/modi.png" alt="HTML5" height="180px">
+							<div class="text-center panelDiv">
+								<div class="row" onclick="showDiv()">
+									<button class="modi"><h5><b>Narendra Modi</b></h5></button>
+								</div>
+								<div>
+									<p>Prime minister of India since 26/05/2014</p>
+								</div>
+							</div>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+
+				<div class="col-sm-4" style="text-align: center;">
+					<div class="panel" style="border-radius: 30px;">
+						<img src="images/modi.png" alt="HTML5" height="180px">
+							<div class="text-center panelDiv">
+								<div class="row" onclick="showDiv()">
+									<button class="modi"><h5><b>Narendra Modi</b></h5></button>
+								</div>
+								<div>
+									<p>Prime minister of India since 26/05/2014</p>
+								</div>
+							</div>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+
+				<div class="col-sm-4" style="text-align: center;">
+					<div class="panel" style="border-radius: 30px;">
+						<img src="images/modi.png" alt="HTML5" height="180px">
+							<div class="text-center panelDiv">
+								<div class="row" onclick="showDiv()">
+									<button class="modi"><h5><b>Narendra Modi</b></h5></button>
+								</div>
+								<div>
+									<p>Prime minister of India since 26/05/2014</p>
+								</div>
+							</div>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+
+				<div class="col-sm-4" style="text-align: center;">
+					<div class="panel" style="border-radius: 30px;">
+						<img src="images/modi.png" alt="HTML5" height="180px">
+							<div class="text-center panelDiv">
+								<div class="row" onclick="showDiv()">
+									<button class="modi"><h5><b>Narendra Modi</b></h5></button>
+								</div>
+								<div>
+									<p>Prime minister of India since 26/05/2014</p>
+								</div>
+							</div>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+
+				<div class="col-sm-4" style="text-align: center;">
+					<div class="panel" style="border-radius: 30px;">
+						<img src="images/modi.png" alt="HTML5" height="180px">
+							<div class="text-center panelDiv">
+								<div class="row" onclick="showDiv()">
+									<button class="modi"><h5><b>Narendra Modi</b></h5></button>
+								</div>
+								<div>
+									<p>Prime minister of India since 26/05/2014</p>
+								</div>
+							</div>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+
+				<div class="col-sm-4" style="text-align: center;">
+					<div class="panel" style="border-radius: 30px;">
+						<img src="images/modi.png" alt="HTML5" height="180px">
+							<div class="text-center panelDiv">
+								<div class="row" onclick="showDiv()">
+									<button class="modi"><h5><b>Narendra Modi</b></h5></button>
+								</div>
+								<div>
+									<p>Prime minister of India since 26/05/2014</p>
+								</div>
+							</div>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+
+
+			</div>	
+
+			<div class="col-sm-4" id="info" style="display: none">
+				<h1 style="text-align: center; margin-bottom: 20px;">INFOBOX</h1>
+				<p><b>Location:</b> New Delhi</p>
+				<p><b>Organisation:</b> Lok Sabha Polls</p>
+				<p><b>Person:</b> Narendra Modi</p>
+				<p><b>Keyphrase:</b> India Polls</p>
+				<h3 style="text-align: center; margin-bottom: 20px; margin-top: 30px">TIMELINE</h3>
+				<img src="images/graph.jpg" style="width: 100%;">
+			</div>
+        </div>
+
+        <div class="tab-pane fade" id="organisations">
+        	 <div class="row center col-sm-8" id="features" style="margin-top: 40px;">
+
+				<div class="col-sm-4" style="text-align: center;">
+					<div class="panel" style="border-radius: 30px;">
+						<img src="images/modi.png" alt="HTML5" height="180px">
+							<div class="text-center panelDiv">
+								<div class="row">
+									<a href="#"><h5><b>Narendra Modi</b></h5></a>
+								</div>
+								<div>
+									<p>Prime minister of India since 26/05/2014</p>
+								</div>
+							</div>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+
+				<div class="col-sm-4" style="text-align: center;">
+					<div class="panel" style="border-radius: 30px;">
+						<img src="images/modi.png" alt="HTML5" height="180px">
+							<div class="text-center panelDiv">
+								<div class="row">
+									<a href="#"><h5><b>Narendra Modi</b></h5></a>
+								</div>
+								<div>
+									<p>Prime minister of India since 26/05/2014</p>
+								</div>
+							</div>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+
+				<div class="col-sm-4" style="text-align: center;">
+					<div class="panel" style="border-radius: 30px;">
+						<img src="images/modi.png" alt="HTML5" height="180px">
+							<div class="text-center panelDiv">
+								<div class="row">
+									<a href="#"><h5><b>Narendra Modi</b></h5></a>
+								</div>
+								<div>
+									<p>Prime minister of India since 26/05/2014</p>
+								</div>
+							</div>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+
+				<div class="col-sm-4" style="text-align: center;">
+					<div class="panel" style="border-radius: 30px;">
+						<img src="images/modi.png" alt="HTML5" height="180px">
+							<div class="text-center panelDiv">
+								<div class="row">
+									<a href="#"><h5><b>Narendra Modi</b></h5></a>
+								</div>
+								<div>
+									<p>Prime minister of India since 26/05/2014</p>
+								</div>
+							</div>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+
+				<div class="col-sm-4" style="text-align: center;">
+					<div class="panel" style="border-radius: 30px;">
+						<img src="images/modi.png" alt="HTML5" height="180px">
+							<div class="text-center panelDiv">
+								<div class="row">
+									<a href="#"><h5><b>Narendra Modi</b></h5></a>
+								</div>
+								<div>
+									<p>Prime minister of India since 26/05/2014</p>
+								</div>
+							</div>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+
+				<div class="col-sm-4" style="text-align: center;">
+					<div class="panel" style="border-radius: 30px;">
+						<img src="images/modi.png" alt="HTML5" height="180px">
+							<div class="text-center panelDiv">
+								<div class="row">
+									<a href="#"><h5><b>Narendra Modi</b></h5></a>
+								</div>
+								<div>
+									<p>Prime minister of India since 26/05/2014</p>
+								</div>
+							</div>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+
+				<div class="col-sm-4" style="text-align: center;">
+					<div class="panel" style="border-radius: 30px;">
+						<img src="images/modi.png" alt="HTML5" height="180px">
+							<div class="text-center panelDiv">
+								<div class="row">
+									<a href="#"><h5><b>Narendra Modi</b></h5></a>
+								</div>
+								<div>
+									<p>Prime minister of India since 26/05/2014</p>
+								</div>
+							</div>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+
+				<div class="col-sm-4" style="text-align: center;">
+					<div class="panel" style="border-radius: 30px;">
+						<img src="images/modi.png" alt="HTML5" height="180px">
+							<div class="text-center panelDiv">
+								<div class="row">
+									<a href="#"><h5><b>Narendra Modi</b></h5></a>
+								</div>
+								<div>
+									<p>Prime minister of India since 26/05/2014</p>
+								</div>
+							</div>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+
+				<div class="col-sm-4" style="text-align: center;">
+					<div class="panel" style="border-radius: 30px;">
+						<img src="images/modi.png" alt="HTML5" height="180px">
+							<div class="text-center panelDiv">
+								<div class="row">
+									<a href="#"><h5><b>Narendra Modi</b></h5></a>
+								</div>
+								<div>
+									<p>Prime minister of India since 26/05/2014</p>
+								</div>
+							</div>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+
+
+			</div>	
+      	</div>
+
+      	<div class="tab-pane fade" id="locations">
+        	 <div class="row center col-sm-12" id="features" style="margin-top: 40px;">
+
+				<div class="col-sm-3" style="text-align: center;">
+					<div class="panel" style="border-radius: 30px;">
+						<img src="images/modi.png" alt="HTML5" height="180px">
+							<div class="text-center panelDiv">
+								<div class="row">
+									<a href="#"><h5><b>Narendra Modi</b></h5></a>
+								</div>
+								<div>
+									<p>Prime minister of India since 26/05/2014</p>
+								</div>
+							</div>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+
+				<div class="col-sm-3" style="text-align: center;">
+					<div class="panel" style="border-radius: 30px;">
+						<img src="images/modi.png" alt="HTML5" height="180px">
+							<div class="text-center panelDiv">
+								<div class="row">
+									<a href="#"><h5><b>Narendra Modi</b></h5></a>
+								</div>
+								<div>
+									<p>Prime minister of India since 26/05/2014</p>
+								</div>
+							</div>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+
+				<div class="col-sm-3" style="text-align: center;">
+					<div class="panel" style="border-radius: 30px;">
+						<img src="images/modi.png" alt="HTML5" height="180px">
+							<div class="text-center panelDiv">
+								<div class="row">
+									<a href="#"><h5><b>Narendra Modi</b></h5></a>
+								</div>
+								<div>
+									<p>Prime minister of India since 26/05/2014</p>
+								</div>
+							</div>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+
+				<div class="col-sm-3" style="text-align: center;">
+					<div class="panel" style="border-radius: 30px;">
+						<img src="images/modi.png" alt="HTML5" height="180px">
+							<div class="text-center panelDiv">
+								<div class="row">
+									<a href="#"><h5><b>Narendra Modi</b></h5></a>
+								</div>
+								<div>
+									<p>Prime minister of India since 26/05/2014</p>
+								</div>
+							</div>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+
+				<div class="col-sm-3" style="text-align: center;">
+					<div class="panel" style="border-radius: 30px;">
+						<img src="images/modi.png" alt="HTML5" height="180px">
+							<div class="text-center panelDiv">
+								<div class="row">
+									<a href="#"><h5><b>Narendra Modi</b></h5></a>
+								</div>
+								<div>
+									<p>Prime minister of India since 26/05/2014</p>
+								</div>
+							</div>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+
+				<div class="col-sm-3" style="text-align: center;">
+					<div class="panel" style="border-radius: 30px;">
+						<img src="images/modi.png" alt="HTML5" height="180px">
+							<div class="text-center panelDiv">
+								<div class="row">
+									<a href="#"><h5><b>Narendra Modi</b></h5></a>
+								</div>
+								<div>
+									<p>Prime minister of India since 26/05/2014</p>
+								</div>
+							</div>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+
+				<div class="col-sm-3" style="text-align: center;">
+					<div class="panel" style="border-radius: 30px;">
+						<img src="images/modi.png" alt="HTML5" height="180px">
+							<div class="text-center panelDiv">
+								<div class="row">
+									<a href="#"><h5><b>Narendra Modi</b></h5></a>
+								</div>
+								<div>
+									<p>Prime minister of India since 26/05/2014</p>
+								</div>
+							</div>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+
+				<div class="col-sm-3" style="text-align: center;">
+					<div class="panel" style="border-radius: 30px;">
+						<img src="images/modi.png" alt="HTML5" height="180px">
+							<div class="text-center panelDiv">
+								<div class="row">
+									<a href="#"><h5><b>Narendra Modi</b></h5></a>
+								</div>
+								<div>
+									<p>Prime minister of India since 26/05/2014</p>
+								</div>
+							</div>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+
+			</div>	
+      	</div>
+
+      	<div class="tab-pane fade" id="concept" style="text-align: center; margin-top: 50px;">
+        	 <img src="images/conceptGraph.jpg">
+      	</div>
+
+
+    </div>
+</div>
+<script type="text/javascript">
+	function showDiv() {
+	   document.getElementById('info').style.display = "block";
+	}
+</script>
+<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="includes/js/jquery-1.8.2.min.js"></script>
+
+<script src="http://code.jquery.com/jquery.js"></script>
+
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+
+	<!-- Bootstrap JS -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- Angular JS -->
+	<script src="includes/js/angular.min.js"></script>
+
+	<!-- JQUERY -->
+	<script src="includes/js/jquery-1.8.2.min.js"></script>
+
+	<script type="text/javascript" src="includes/js/ng-infinite-scroll.min.js"></script>
+
+	<!-- Angular App -->
+	<script src="includes/js/app/app.js"></script>
+
+	<script src="includes/js/app/services.js"></script>
+
+	<script src="includes/js/app/controllers.js"></script>
+
+</body>
+</html>
